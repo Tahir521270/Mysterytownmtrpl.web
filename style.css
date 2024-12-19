@@ -69,29 +69,3 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.button:hover {
-    background-color: #4daed3;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #65c7f7;
-}
-.circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* يجعل العنصر دائري */
-    overflow: hidden; /* لإخفاء أي جزء زائد من الصورة */
-    margin: 20px auto; /* مركزة */
-    background-color: #ccc; /* لون خلفية افتراضي */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* إضافة ظل */
-}
-
-.circle-image {
-    width: 100%; /* جعل الصورة تأخذ عرض الدائرة */
-    height: 100%; /* جعل الصورة تأخذ ارتفاع الدائرة */
-    object-fit: cover; /* لضمان ملاءمة الصورة داخل الدائرة */
-}
