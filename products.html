@@ -1,79 +1,42 @@
-<div class="products-section">
-  <h2>المنتجات</h2>
-  <div class="products-grid">
-    <!-- منتج 1 -->
+<div class="product-container">
     <div class="product">
-      <h3>Buffalo Car</h3>
-      <img src="5-buffalo-car-san-andreas.jpg" alt="Buffalo Car">
-      <p>السعر: 750k</p>
-      <button onclick="buyProduct('Buffalo Car', '750k')">شراء</button>
+        <img src="5-buffalo-car-san-andreas.jpg" alt="Buffalo Car">
+        <h3>Buffalo Car</h3>
+        <p>السعر: 750k</p>
     </div>
-
-    <!-- منتج 2 -->
     <div class="product">
-      <h3>Sports Car</h3>
-      <img src="which-is-your-favourite-sports-cars-in-gta-sa-my-favourite-v0-7xsg1tapw0qb1.jpg" alt="Sports Car">
-      <p>السعر: 1m</p>
-      <button onclick="buyProduct('Sports Car', '1m')">شراء</button>
+        <img src="which-is-your-favourite-sports-cars-in-gta-sa-my-favourite-v0-7xsg1tapw0qb1.jpg" alt="Sports Car">
+        <h3>Sports Car</h3>
+        <p>السعر: 1M</p>
     </div>
-
-    <!-- منتج 3 -->
     <div class="product">
-      <h3>Classic Car</h3>
-      <img src="hqdefault.jpg" alt="Classic Car">
-      <p>السعر: 450k</p>
-      <button onclick="buyProduct('Classic Car', '450k')">شراء</button>
+        <img src="hqdefault.jpg" alt="HQ Default Car">
+        <h3>HQ Default Car</h3>
+        <p>السعر: 450k</p>
     </div>
-
-    <!-- منتج 4 -->
     <div class="product">
-      <h3>ZR 350</h3>
-      <img src="images_gta-san-andreas_vehicles_zr-350.webp" alt="ZR 350">
-      <p>السعر: 950k</p>
-      <button onclick="buyProduct('ZR 350', '950k')">شراء</button>
+        <img src="images_gta-san-andreas_vehicles_zr-350.webp" alt="ZR-350">
+        <h3>ZR-350</h3>
+        <p>السعر: 950k</p>
     </div>
-
-    <!-- منتج 5 -->
     <div class="product">
-      <h3>Low Budget Car</h3>
-      <img src="658962-enb2018-4-7-11-7-58-result.jpg" alt="Low Budget Car">
-      <p>السعر: 20k</p>
-      <button onclick="buyProduct('Low Budget Car', '20k')">شراء</button>
+        <img src="658962-enb2018-4-7-11-7-58-result.jpg" alt="Low-Cost Car">
+        <h3>Low-Cost Car</h3>
+        <p>السعر: 20k</p>
     </div>
-
-    <!-- منتج 6 -->
     <div class="product">
-      <h3>Combat Shotgun</h3>
-      <img src="images_gta-san-andreas_weapons_combat-shotgun.webp" alt="Combat Shotgun">
-      <p>السعر: 25k</p>
-      <button onclick="buyProduct('Combat Shotgun', '25k')">شراء</button>
+        <img src="images_gta-san-andreas_weapons_combat-shotgun.web" alt="Combat Shotgun">
+        <h3>Combat Shotgun</h3>
+        <p>السعر: 25k</p>
     </div>
-
-    <!-- منتج 7 -->
     <div class="product">
-      <h3>AK-47</h3>
-      <img src="images_gta-san-andreas_weapons_resized_ak-47__108x108.webp" alt="AK-47">
-      <p>السعر: 30k</p>
-      <button onclick="buyProduct('AK-47', '30k')">شراء</button>
+        <img src="images_gta-san-andreas_weapons_resized_ak-47__108x108.webp" alt="AK-47">
+        <h3>AK-47</h3>
+        <p>السعر: 30k</p>
     </div>
-
-    <!-- منتج 8 -->
     <div class="product">
-      <h3>SMG</h3>
-      <img src="images_gta-san-andreas_weapons_resized_smg__185x185.web" alt="SMG">
-      <p>السعر: 25k</p>
-      <button onclick="buyProduct('SMG', '25k')">شراء</button>
+        <img src="images_gta-san-andreas_weapons_resized_smg__185x185.web" alt="SMG">
+        <h3>SMG</h3>
+        <p>السعر: 25k</p>
     </div>
-  </div>
 </div>
-
-<script>
-  function buyProduct(productName, price) {
-    const discordUsername = prompt("الرجاء إدخال اسم المستخدم في ديسكورد:");
-    if (discordUsername) {
-      const emailBody = `تم شراء المنتج: ${productName}\nالسعر: ${price}\nاسم المستخدم في ديسكورد: ${discordUsername}`;
-      window.location.href = `mailto:sarawily0@gmail.com?subject=طلب شراء منتج&body=${encodeURIComponent(emailBody)}`;
-      alert("تم إرسال طلبك بنجاح!");
-    }
-  }
-</script>
