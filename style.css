@@ -113,16 +113,46 @@ h1 {
   margin-top: 20px;
 }
 
-.rules-button {
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
+.city-rules {
+  text-align: center;
+  padding: 20px;
+  background-color: #001f3f; /* نفس الخلفية العامة */
 }
 
-.rules-button:hover {
-  background-color: #0056b3;
+.city-rules h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.rule-box {
+  background-color: #007BFF; /* نفس لون الأزرار */
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 500px;
+  color: #ffffff; /* لون النص أبيض */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.rule-box h3 {
+  font-size: 20px;
+  color: #ffcc00; /* لون مميز للعناوين */
+  margin-bottom: 10px;
+}
+
+.rule-box p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #001f3f;
+  color: #ffffff;
 }
