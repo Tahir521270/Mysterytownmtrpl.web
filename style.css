@@ -107,3 +107,22 @@ h1 {
     font-size: 1rem;
     color: #a8dadc;
 }
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.rules-button {
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.rules-button:hover {
+  background-color: #0056b3;
+}
