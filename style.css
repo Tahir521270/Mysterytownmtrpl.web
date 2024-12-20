@@ -129,52 +129,62 @@ h1 {
 }
 
 
-.products {
-  display: flex;
-  flex-direction: column; /* ترتيب المنتجات عموديًا */
-  gap: 20px; /* المسافة بين المنتجات */
+.products-section {
   padding: 20px;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
   align-items: center;
 }
 
 .product {
-  background-color: #f1f1f1; /* لون خلفية متناسق */
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  width: 90%; /* عرض المنتج */
-  max-width: 400px; /* أقصى عرض */
-  text-align: center;
+  padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .product img {
-  max-width: 100%;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 150px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .product h3 {
   font-size: 1.5em;
-  margin: 10px 0;
+  margin-bottom: 10px;
   color: #333;
 }
 
 .product p {
-  font-size: 1.2em;
-  margin: 10px 0;
+  font-size: 1em;
   color: #666;
+  margin-bottom: 15px;
 }
 
 .product button {
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1em;
+  transition: 0.3s;
 }
 
 .product button:hover {
