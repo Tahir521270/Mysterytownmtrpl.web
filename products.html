@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر ميستري تاون</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #e6f7ff, #b3d9ff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      text-align: center;
+    }
 
+    h1, h2 {
+      margin: 20px 0;
+      font-size: 36px;
+      color: #0066cc;
+      text-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+
+    .button {
+      background: #4da6ff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background: #3399ff;
+      transform: translateY(-3px);
+    }
+
+    .button:active {
+      transform: translateY(0);
+    }
+
+    footer {
+      margin-top: 20px;
+      background: #0066cc;
+      color: #fff;
+      padding: 10px 0;
+      font-size: 14px;
+      text-align: center;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>متجر ميستري تاون</h1>
+
+  <!-- قسم السيارات -->
+  <h2>السيارات</h2>
+  <div class="container">
+    <div class="card">
+      <img src="5-buffalo-car-san-andreas.jpg" alt="سيارة Buffalo">
+      <h2>سيارة Buffalo</h2>
+      <p>السعر: 750,000$</p>
+      <button class="button" onclick="buyItem('سيارة Buffalo', 750000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="which-is-your-favourite-sports-cars-in-gta-sa-my-favourite-v0-7xsg1tapw0qb1.jpg" alt="سيارة رياضية">
+      <h2>سيارة رياضية</h2>
+      <p>السعر: 1,000,000$</p>
+      <button class="button" onclick="buyItem('سيارة رياضية', 1000000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="hqdefault.jpg" alt="سيارة HQ">
+      <h2>سيارة HQ</h2>
+      <p>السعر: 450,000$</p>
+      <button class="button" onclick="buyItem('سيارة HQ', 450000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="images_gta-san-andreas_vehicles_zr-350.webp" alt="سيارة ZR-350">
+      <h2>سيارة ZR-350</h2>
+      <p>السعر: 950,000$</p>
+      <button class="button" onclick="buyItem('سيارة ZR-350', 950000)">شراء</button>
+    </div>
+  </div>
+
+  <!-- قسم الأسلحة -->
+  <h2>الأسلحة</h2>
+  <div class="container">
+    <div class="card">
+      <img src="658962-enb2018-4-7-11-7-58-result.jpg" alt="مسدس">
+      <h2>مسدس</h2>
+      <p>السعر: 20,000$</p>
+      <button class="button" onclick="buyItem('مسدس', 20000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="images_gta-san-andreas_weapons_combat-shotgun.web" alt="بندقية قتال">
+      <h2>بندقية قتال</h2>
+      <p>السعر: 25,000$</p>
+      <button class="button" onclick="buyItem('بندقية قتال', 25000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="images_gta-san-andreas_weapons_resized_ak-47__108x108.webp" alt="AK-47">
+      <h2>AK-47</h2>
+      <p>السعر: 30,000$</p>
+      <button class="button" onclick="buyItem('AK-47', 30000)">شراء</button>
+    </div>
+    <div class="card">
+      <img src="images_gta-san-andreas_weapons_resized_smg__185x185.web" alt="SMG">
+      <h2>SMG</h2>
+      <p>السعر: 25,000$</p>
+      <button class="button" onclick="buyItem('SMG', 25000)">شراء</button>
+    </div>
+  </div>
+
+  <!-- الحقوق -->
+  <footer>
+    جميع الحقوق محفوظة © لسيرفر ميستري تاون 2024
+  </footer>
+
+  <script>
+    function buyItem(productName, price) {
+      const discordUser = prompt("أدخل اسم المستخدم في ديسكورد:");
+      if (discordUser) {
+        // استخدام EmailJS لإرسال البريد الإلكتروني
+        emailjs.send("service_id", "template_id", {
+          to_email: "sarawily0@gmail.com",
+          product: productName,
+          price: price,
+          discord_user: discordUser
+        }).then(() => {
+          alert("تم إرسال طلبك بنجاح! سيتم مراجعة طلبك قريبًا.");
+        }).catch((error) => {
+          alert("حدث خطأ أثناء إرسال الطلب. الرجاء المحاولة مرة أخرى.");
+          console.error("خطأ:", error);
+        });
+      }
+    }
+  </script>
+
+  <!-- إضافة EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_USER_ID"); // ضع User ID الخاص بك من EmailJS هنا
+    })();
+  </script>
+</body>
+</html>
